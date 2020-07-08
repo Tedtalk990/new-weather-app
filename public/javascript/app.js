@@ -10,6 +10,7 @@ const msg1=document.getElementById('msg1')
 const msg2=document.getElementById('msg2')
 const msg3=document.getElementById('msg3')
 const msg4=document.getElementById('msg4')
+const msg5=document.getElementById('msg5')
 const abc=document.getElementsByClassName('abc')
 form.addEventListener('submit',(e)=>{
 e.preventDefault()
@@ -27,6 +28,7 @@ e.preventDefault()
                 msg2.textContent=data.temperature
                 msg3.textContent=data.weatherDescription
                 msg4.textContent=data.feelslike
+                msg5.textContent=data.humidity
               }
               for(var i=0;i<abc.length;i++){
               abc[i].classList.add("efg")

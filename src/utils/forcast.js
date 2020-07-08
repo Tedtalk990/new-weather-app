@@ -11,7 +11,8 @@ const forcast=(lat,lon,call)=>{
                 weatherDescription:body.current.weather_descriptions[0],
                 temperature:body.current.temperature,
                 feelslike:body.current.feelslike,
-                observationTime:body.current.observation_time
+                observationTime:body.current.observation_time,
+                humidity:body.current.humidity  
             })
         }
     })

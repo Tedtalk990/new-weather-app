@@ -71,7 +71,7 @@ app.get('/data',(req,res)=>{
                 error
             })
         }
-        forcast(latitude,longitude,(error,{weatherDescription,temperature,feelslike,observationTime})=>{
+        forcast(latitude,longitude,(error,{weatherDescription,temperature,feelslike,observationTime,humidity})=>{
             if(error){
                return res.send({
                     error
@@ -83,7 +83,8 @@ app.get('/data',(req,res)=>{
                 temperature,
                 feelslike,
                 observationTime,
-                input:add
+                input:add,
+                humidity
             })
         })
     })
