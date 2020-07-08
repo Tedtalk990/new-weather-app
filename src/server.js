@@ -5,6 +5,7 @@ const forcast=require('./utils/forcast.js')
 const geocode=require('./utils/geocode.js')
 const { dirname } = require('path');
 const app=express();
+const port=process.env.PORT || 3000;
 const viewspath=path.join(__dirname,'../Templates/views')
 const partialsPath=path.join(__dirname,'../Templates/partials')
 app.set('view engine','hbs');
@@ -101,6 +102,6 @@ app.get('/data',(req,res)=>{
  app.get('*',(req,res)=>{
     res.send('Page Not Found')
 })
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000!!')
+app.listen(port,()=>{
+    console.log('Server is up on port `${port}`!!')
 })
