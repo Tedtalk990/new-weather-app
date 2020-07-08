@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/image/weather-icon.png">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+        <link rel="bootstrap" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">    
+</head>
+    <body>
+        <div class="main-content">
+        {{>headers}}
+        {{!-- <h1>{{title}}:</h1> --}}
+        {{!-- <p>{{news}}</p> --}}
+        <form >
+            <input type="text" name="name" placeholder="Location">
+            <button type="button">Search</button>
+        </form>
+        <p class="abc">Location: <span id="msg1"></span></p>
+        <p class="abc">Tempreture: <span id="msg2"></span></p>
+        <p class="abc">Weather-Description: <span id="msg3"></span></p>
+        <p class="abc">Feels-Like: <span id="msg4"></span></p>
+        </div>
+        {{>footers}}
+        <script src="/javascript/app.js"></script>
+    </body>
+</html>
