@@ -103,5 +103,5 @@ app.get('/data',(req,res)=>{
     res.send('Page Not Found')
 })
 app.listen(port,()=>{
-    console.log('Server is up on port `${port}`!!')
+    console.log(`Server is up on port ${port}!!`)
 })
